@@ -61,11 +61,11 @@
                 <option value="Opera"></option>
                 <option value="Safari"></option>
             </datalist>
-
-            <br>
-            <!-- new HTML5 markup (output) -->
-            
-
+        </form>
+        <form oninput="result.value=parseInt(firstValue.value)+parseInt(secondValue.value)">
+            <input type="number" name="firstValue"> +
+            <input type="number" name="secondValue"> =
+            <output name="result"></output>
         </form>
     </div>
 </body>
