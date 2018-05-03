@@ -1,4 +1,4 @@
-.navbar { background: #f97300; }
+.navbar { background: #c25e00; }
 
 .nav-link, .navbar-brand {
     color: #f4f4f4;
@@ -17,7 +17,7 @@
 .navbar-toggler { background: #fff !important }
 
 .header {
-    background-image: url('../images/ex1') !important;
+    background-image: url('images/codebase.jpg') !important;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
