@@ -15,11 +15,20 @@ var ctx = canvas.getContext('2d');
 // ctx.stroke();
 
 // draw a rectangle
-ctx.beginPath();
-ctx.rect(188, 50, 200, 100);
-ctx.fillStyle = 'yellow';
-ctx.fill();
-ctx.lineWidth = 3;
-ctx.strokeStyle = 'black';
-ctx.stroke();
+// ctx.beginPath();
+// ctx.rect(188, 50, 200, 100);
+// ctx.fillStyle = 'yellow';
+// ctx.fill();
+// ctx.lineWidth = 3;
+// ctx.strokeStyle = 'black';
+// ctx.stroke();
 
+// draw custom shape
+ctx.beginPath();
+ctx.moveTo(50, 50);
+ctx.lineTo(70, 250);
+ctx.lineTo(300, 200);
+ctx.closePath();
+ctx.fill();
+
+// Assignment, Draw a star with 8 points
