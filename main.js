@@ -19,6 +19,7 @@ ctx.beginPath();
 ctx.rect(188, 50, 200, 100);
 ctx.fillStyle = 'yellow';
 ctx.fill();
-ctx.lineWidth = 7;
+ctx.lineWidth = 3;
 ctx.strokeStyle = 'black';
 ctx.stroke();
+
