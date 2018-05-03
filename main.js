@@ -24,11 +24,24 @@ var ctx = canvas.getContext('2d');
 // ctx.stroke();
 
 // draw custom shape
-ctx.beginPath();
-ctx.moveTo(50, 50);
-ctx.lineTo(70, 250);
-ctx.lineTo(300, 200);
-ctx.closePath();
-ctx.fill();
+// ctx.beginPath();
+// ctx.moveTo(50, 50);
+// ctx.lineTo(70, 250);
+// ctx.lineTo(300, 200);
+// ctx.closePath();
+// ctx.fill();
 
 // Assignment, Draw a star with 8 points
+
+
+// draw a circle
+var centerX = canvas.width / 2;
+var centerY = canvas.height / 2;
+var radius = 70;
+ctx.beginPath();
+ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+ctx.fillStyle = 'green';
+ctx.fill();
+ctx.lineWidth = 5;
+ctx.strokeStyle = '#003300';
+ctx.stroke();
