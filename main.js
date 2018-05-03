@@ -78,5 +78,16 @@ var ctx = canvas.getContext('2d');
 // imageObj.onload = function () {
 //     ctx.drawImage(imageObj, 10, 50);
 // };
-var image = document.getElementById('img');
-ctx.drawImage(image, 5, 10);
+
+
+// var image = document.getElementById('img');
+// ctx.drawImage(image, 5, 10);
+
+// Animation
+window.addEventListener('mousemove', animate, false);
+function animate(element) {
+    ctx.clearRect(0, 0, 500, 500);
+    var xPosition = element.clientX;
+    var yPosition = element.clientY;
+    ctx.fillRect(xPosition - 50, yPosition - 50, 100, 100);
+}
