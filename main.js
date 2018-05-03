@@ -47,6 +47,18 @@ var ctx = canvas.getContext('2d');
 // ctx.stroke();
 
 // draw text
-ctx.font = "30px Arial";
-ctx.fillStyle = 'red';
-ctx.fillText('Hello World', 10, 50);
+// ctx.font = "30px Arial";
+// ctx.fillStyle = 'red';
+// ctx.fillText('Hello World', 10, 50);
+
+// linear gradient
+ctx.rect(0, 0, canvas.width, canvas.height);
+// add linear gradient
+var grd = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+// light blue
+grd.addColorStop(0, '#8ED6FF');
+// dark blue
+grd.addColorStop(1, '#004cb3');
+ctx.fillStyle = grd;
+ctx.fill();
+
