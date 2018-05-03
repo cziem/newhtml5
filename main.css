@@ -15,3 +15,5 @@ form {
 }
 
 input { margin-bottom: 1em; }
+
+canvas { border: 1px solid red; }
