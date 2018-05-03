@@ -63,12 +63,20 @@ var ctx = canvas.getContext('2d');
 // ctx.fill();
 
 // radial gradient
-ctx.rect(0, 0, canvas.width, canvas.height);
-// add linear gradient
-var grd = ctx.createRadialGradient(238, 50, 10, 238, 50, 300);
-// light blue
-grd.addColorStop(0, '#8ED6FF');
-// dark blue
-grd.addColorStop(1, '#004cb3');
-ctx.fillStyle = grd;
-ctx.fill();
+// ctx.rect(0, 0, canvas.width, canvas.height);
+// // add linear gradient
+// var grd = ctx.createRadialGradient(238, 50, 10, 238, 50, 300);
+// // light blue
+// grd.addColorStop(0, '#8ED6FF');
+// // dark blue
+// grd.addColorStop(1, '#004cb3');
+// ctx.fillStyle = grd;
+// ctx.fill();
+
+// draw Image
+// var imageObj = new Image();
+// imageObj.onload = function () {
+//     ctx.drawImage(imageObj, 10, 50);
+// };
+var image = document.getElementById('img');
+ctx.drawImage(image, 5, 10);
