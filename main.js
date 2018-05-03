@@ -52,13 +52,23 @@ var ctx = canvas.getContext('2d');
 // ctx.fillText('Hello World', 10, 50);
 
 // linear gradient
+// ctx.rect(0, 0, canvas.width, canvas.height);
+// // add linear gradient
+// var grd = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+// // light blue
+// grd.addColorStop(0, '#8ED6FF');
+// // dark blue
+// grd.addColorStop(1, '#004cb3');
+// ctx.fillStyle = grd;
+// ctx.fill();
+
+// radial gradient
 ctx.rect(0, 0, canvas.width, canvas.height);
 // add linear gradient
-var grd = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+var grd = ctx.createRadialGradient(238, 50, 10, 238, 50, 300);
 // light blue
 grd.addColorStop(0, '#8ED6FF');
 // dark blue
 grd.addColorStop(1, '#004cb3');
 ctx.fillStyle = grd;
 ctx.fill();
-
