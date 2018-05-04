@@ -183,7 +183,7 @@ a > button {
   color: #fff;
   text-align: center;
   border-bottom-left-radius: 93%;
-  transition: 3s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .team .item:hover .des {
